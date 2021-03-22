@@ -89,11 +89,11 @@
                 </Grid.ColumnDefinitions>
                 <DataGrid x:Name="Kolcsonzesek" HorizontalAlignment="Left" Height="530" Margin="1.5,21,0,0" VerticalAlignment="Top" Width="800" ItemsSource="{Binding}" AutoGenerateColumns="False" CanUserResizeRows="False" CellEditEnding="Kolcsonzesek_CellEditEnding" SelectionChanged="Kolcsonzesek_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False" Grid.ColumnSpan="2" Grid.Column="1">
                     <DataGrid.Columns>
-                        <DataGridTextColumn x:Name="KolcsonzesIDColumn" Binding="{Binding KolcsonzesID}" Header="Kölcsönzés ID-je" SortDirection="Ascending" CanUserReorder="False"/>
-                        <DataGridTextColumn x:Name="KolcsonzesOlvIDColumn" Binding="{Binding OlvasoID}" Header="Kölcsönző ID-je" CanUserReorder="False"/>
-                        <DataGridTextColumn x:Name="KolcsonzesKonyvIDColumn" Binding="{Binding KonyvID}" Header="Könyv ID-je" CanUserReorder="False"/>
+                        <DataGridTextColumn x:Name="KolcsonzesIDColumn" Binding="{Binding KolcsonzesID}" Header="Kölcsönzés ID" SortDirection="Ascending" CanUserReorder="False"/>
+                        <DataGridTextColumn x:Name="KolcsonzesOlvIDColumn" Binding="{Binding OlvasoID}" Header="Kölcsönző ID" CanUserReorder="False"/>
+                        <DataGridTextColumn x:Name="KolcsonzesKonyvIDColumn" Binding="{Binding KonyvID}" Header="Könyv ID" CanUserReorder="False"/>
                         <DataGridTextColumn x:Name="KolcsonzesDatumaColumn" Binding="{Binding KolcsonzesDatuma}" Header="Kölcsönzés dátuma" CanUserReorder="False"/>
-                        <DataGridTextColumn x:Name="KolcsonzesVisszaColumn" Binding="{Binding VisszavetelDatuma}" Header="Könyv visszaadásának dátuma" CanUserReorder="False"/>
+                        <DataGridTextColumn x:Name="KolcsonzesVisszaColumn" Binding="{Binding VisszavetelDatuma}" Header="Könyv visszatérités dátuma" CanUserReorder="False"/>
                     </DataGrid.Columns>
                 </DataGrid>
                 <Label Content="Ki kölcsönzés" HorizontalAlignment="Left" Margin="823,98,0,0" VerticalAlignment="Top" FontSize="24" Grid.Column="2"/>
@@ -119,9 +119,9 @@
                 </Grid.ColumnDefinitions>
                 <DataGrid x:Name="LejartKolcsonzesek" HorizontalAlignment="Left" Height="530" Margin="10,21,0,0" VerticalAlignment="Top" Width="800" ItemsSource="{Binding}" AutoGenerateColumns="True" CanUserResizeRows="False" IsEnabled="False" Grid.ColumnSpan="2" SelectionChanged="LejartKolcsonzesek_SelectionChanged">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Binding="{Binding LejartKolcsonzesID}" Header="Kölcsönzés ID-je" SortDirection="Ascending" CanUserReorder="False"/>
-                        <DataGridTextColumn Binding="{Binding LejartOlvasoID}" Header="Kölcsönző ID-je" CanUserReorder="False"/>
-                        <DataGridTextColumn Binding="{Binding LejartKonyvID}" Header="Könyv ID-je" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding LejartKolcsonzesID}" Header="Kölcsönzés ID" SortDirection="Ascending" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding LejartOlvasoID}" Header="Kölcsönző ID" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding LejartKonyvID}" Header="Könyv ID" CanUserReorder="False"/>
                         <DataGridTextColumn Binding="{Binding LejartKolcsonzesDatuma}" Header="Kölcsönzés dátuma" CanUserReorder="False"/>
                     </DataGrid.Columns>
                 </DataGrid>
@@ -149,11 +149,11 @@
                 </DataGrid>
                 <DataGrid x:Name="KolcsonzesKereses" HorizontalAlignment="Left" Height="530" Margin="10,21,0,0" VerticalAlignment="Top" Width="800" ItemsSource="{Binding}" BeginningEdit="Kereses_BeginningEdit" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Visibility="Hidden" AutoGenerateColumns="False" Grid.RowSpan="2" Grid.ColumnSpan="2">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Binding="{Binding KolcsonzesID}" Header="Kölcsönzés ID-je" SortDirection="Ascending" CanUserReorder="False"/>
-                        <DataGridTextColumn Binding="{Binding OlvasoID}" Header="Kölcsönző ID-je" CanUserReorder="False"/>
-                        <DataGridTextColumn Binding="{Binding KonyvID}" Header="Könyv ID-je" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding KolcsonzesID}" Header="Kölcsönzés ID" SortDirection="Ascending" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding OlvasoID}" Header="Kölcsönző ID" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding KonyvID}" Header="Könyv ID" CanUserReorder="False"/>
                         <DataGridTextColumn Binding="{Binding KolcsonzesDatuma}" Header="Kölcsönzés dátuma" CanUserReorder="False"/>
-                        <DataGridTextColumn Binding="{Binding VisszavetelDatuma}" Header="Könyv visszaadásának dátuma" CanUserReorder="False"/>
+                        <DataGridTextColumn Binding="{Binding VisszavetelDatuma}" Header="Könyv visszatérités dátuma" CanUserReorder="False"/>
                     </DataGrid.Columns>
                 </DataGrid>
                 <DataGrid x:Name="Eredmeny" HorizontalAlignment="Left" Height="530" Margin="10,21,0,0" VerticalAlignment="Top" Width="800" Grid.RowSpan="2" Grid.ColumnSpan="2"></DataGrid>
